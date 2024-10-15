@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tp1_javafx.tp1_prog2_v2.ConsultasFuncionarioPageController">
+    <children>
+      <ImageView fitHeight="552.0" fitWidth="600.0" layoutX="28.0" opacity="0.05" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/login.jpeg" />
+         </image>
+      </ImageView>
+         <ListView fx:id="consultasListView" layoutX="100.0" layoutY="49.0" prefHeight="200.0" prefWidth="400.0" style="-fx-border-color: #99c5d3; -fx-border-width: 3;" />
+          <Button fx:id="efetuarConsultaButton" layoutX="146.0" layoutY="259.0" mnemonicParsing="false" onAction="#onEfetuarConsultaButtonClick" style="-fx-background-color: #00b7f7;" text="Efetuar Consulta" />
+      <Button fx:id="cancelarConsultaButton" layoutX="339.0" layoutY="259.0" mnemonicParsing="false" onAction="#onCancelarConsultaButtonClick" style="-fx-background-color: rgba(255,153,153,0.2);" text="Cancelar Consulta" />
+
+        <VBox layoutX="164.0" layoutY="314.0" prefHeight="207.0" prefWidth="272.0" spacing="10.0" style="-fx-border-color: #99c5d3; -fx-border-width: 3; -fx-background-color: white;">
+            <Label text="Relatório da Consulta" />
+            <Label fx:id="servicosLabel" />
+         <TextArea fx:id="descricaoLabel" prefHeight="200.0" prefWidth="200.0" />
+        </VBox>
+        <Label layoutX="261.0" layoutY="20.0" text="Consultas" textFill="#00b7f7">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="16.0" />
+            </font></Label>
+    </children>
+</AnchorPane>

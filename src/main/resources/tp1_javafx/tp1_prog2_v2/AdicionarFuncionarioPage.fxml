@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="415.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tp1_javafx.tp1_prog2_v2.AdicionarFuncionarioPageController">
+   <children>
+      <ImageView fitHeight="415.0" fitWidth="414.0" layoutX="3.0" opacity="0.05" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/login.jpeg" />
+         </image>
+      </ImageView>
+       <TextField fx:id="nome" layoutX="127.0" layoutY="50.0" promptText="Nome" />
+       <TextField fx:id="numCC" layoutX="127.0" layoutY="90.0" promptText="Número de CC" />
+       <TextField fx:id="numFiscal" layoutX="127.0" layoutY="130.0" promptText="Número Fiscal" />
+       <TextField fx:id="telemovel" layoutX="127.0" layoutY="170.0" promptText="Telemóvel" />
+       <TextField fx:id="morada" layoutX="127.0" layoutY="210.0" promptText="Morada" />
+       <TextField fx:id="localidade" layoutX="127.0" layoutY="250.0" promptText="Localidade" />
+       <PasswordField fx:id="password" layoutX="127.0" layoutY="290.0" promptText="Password" />
+       <ComboBox fx:id="tipoComboBox" layoutX="130.0" layoutY="330.0" promptText="Tipo de Funcionário" style="-fx-background-color: #99c5d3;">
+           <items>
+               <FXCollections fx:factory="observableArrayList">
+                   <String fx:value="DENTISTA" />
+                   <String fx:value="ENFERMEIRO" />
+                   <String fx:value="AUXILIAR" />
+                   <String fx:value="SECRETARIADO" />
+               </FXCollections>
+           </items>
+       </ComboBox>
+       <Button fx:id="adicionarFuncionarioButton" layoutX="140.0" layoutY="375.0" onAction="#onAdicionarFuncionarioButtonClick" style="-fx-background-color: #00b7f7;" text="Adicionar Funcionário" />
+       <Label layoutX="97.0" layoutY="16.0" text="Informações do Funcionario" textFill="#00b7f7">
+           <font>
+               <Font name="Arial Rounded MT Bold" size="16.0" />
+           </font></Label>
+   </children>
+</Pane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tp1_javafx.tp1_prog2_v2.VisualizarConsultasPageController">
+    <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="103.0" opacity="0.05" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/login.jpeg" />
+         </image>
+      </ImageView>
+        <Label layoutX="14.0" layoutY="21.0" text="Consultas Marcadas" textFill="#00b7f7">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="16.0" />
+            </font></Label>
+
+        <HBox layoutX="14.0" layoutY="56.0" spacing="10">
+            <Label text="Empresa:" />
+            <Label fx:id="empresaLabel" prefWidth="150.0">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="15.0" />
+            </font></Label>
+        </HBox>
+
+        <HBox layoutX="14.0" layoutY="96.0" spacing="10">
+            <Label text="Consultório:" />
+            <ComboBox fx:id="consultorioComboBox" onAction="#onConsultorioComboBoxSelected" prefWidth="150.0" style="-fx-background-color: #99c5d3;" />
+        </HBox>
+
+        <ListView fx:id="consultasListView" layoutX="14.0" layoutY="136.0" prefHeight="200.0" prefWidth="572.0" style="-fx-border-color: #99c5d3; -fx-border-width: 3;" />
+        <Button layoutX="326.0" layoutY="349.0" onAction="#confirmarConsulta" style="-fx-background-color: #00b7f7;" text="Confirmar Consulta" />
+        <Button layoutX="461.0" layoutY="349.0" onAction="#anularConsulta" style="-fx-background-color: rgba(255,153,153,0.2);" text="Anular Consulta" />
+    </children>
+</AnchorPane>

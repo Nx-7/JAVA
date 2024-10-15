@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="431.0" prefWidth="431.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tp1_javafx.tp1_prog2_v2.RegisterPageController">
+   <children>
+      <ImageView fitHeight="431.0" fitWidth="431.0" layoutX="-1.0" layoutY="-1.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/login.jpeg" />
+         </image>
+      </ImageView>
+       <TextField fx:id="username" layoutX="136.0" layoutY="40.0" promptText="Username" />
+       <TextField fx:id="numCC" layoutX="136.0" layoutY="80.0" promptText="NumCC" />
+       <TextField fx:id="numFiscal" layoutX="136.0" layoutY="120.0" promptText="NumFiscal" />
+       <TextField fx:id="telefone" layoutX="136.0" layoutY="160.0" promptText="Telefone" />
+       <TextField fx:id="morada" layoutX="136.0" layoutY="200.0" promptText="Morada" />
+       <TextField fx:id="localidade" layoutX="136.0" layoutY="240.0" promptText="Localidade" />
+       <PasswordField fx:id="password" layoutX="136.0" layoutY="280.0" promptText="Password" />
+       <ComboBox fx:id="userType" layoutX="137.0" layoutY="317.0" promptText="Tipo " style="-fx-background-color: #99c5d3;">
+           <items>
+               <FXCollections fx:factory="observableArrayList">
+                   <String fx:value="Cliente" />
+                   <String fx:value="DonoEmpresa" />
+               </FXCollections>
+           </items>
+       </ComboBox>
+       <Button fx:id="registerButton" layoutX="136.0" layoutY="371.0" onAction="#onRegisterButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #00b7f7;" text="Registar" />
+       <Label layoutX="185.0" layoutY="4.0" text="Registo" textFill="#00b7f7">
+           <font>
+               <Font name="Arial Rounded MT Bold" size="16.0" />
+           </font></Label>
+   </children>
+</Pane>
